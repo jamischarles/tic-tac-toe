@@ -16,9 +16,6 @@
     "babel-preset-stage-3": "^6.24.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-redux": "5.0.6",
-    "redux": "3.6.0",
-    "redux-logger": "3.0.6",
     "webpack": "2.4.1",
     "webpack-dev-server": "^2.9.7"
   }
