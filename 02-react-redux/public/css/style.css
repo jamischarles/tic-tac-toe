@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.total-label {
+  font-weight: bold;
+}
+
+.amount-field {
+  width: 50px;
+}
+
+.errorMsg {
+    background-color: #a20000;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* Tic Tac Toe board */
+.fieldContainer {
+  width: 312px;
+}
+
+.field {
+  /* background-color: red; */
+  border: 1px #eee solid;
+  display: inline-block;
+  font-size: 72px;
+  line-height: 98px;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+}
+
+.empty:hover {
+  background-color: #fbfbfb;
+}
+
+.clearButton{
+  margin-bottom: 15px;
+}
