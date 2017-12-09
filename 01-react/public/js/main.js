@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import GameCanvas from './containers/game.js';
+import GameCanvas from './game.js';
 
 
 class MainComponent extends React.Component {
