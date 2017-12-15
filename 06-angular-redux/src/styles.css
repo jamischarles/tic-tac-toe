@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* Tic Tac Toe board */
+.fieldContainer {
+  width: 312px;
+}
+
+.field {
+  /* background-color: red; */
+  border: 1px #eee solid;
+  display: inline-block;
+  font-size: 72px;
+  line-height: 98px;
+  margin-right: -6px;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+}
+
+.empty:hover {
+  background-color: #fbfbfb;
+}
+
+.clearButton{
+  margin-bottom: 15px;
+}

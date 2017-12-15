@@ -1,0 +1,16 @@
+<div>
+  <h1>{{ title }}</h1>
+
+  <div>
+    <button class="clearButton" (click)="handleRestart()" >Clear</button>
+
+    <div class="fieldContainer">
+      <ng-template let-i="index" ngFor let-field [ngForOf]="fields">
+        <div *ngIf="field === false" (click)="handlePlay(i)" class="field empty">&nbsp;</div>
+        <div *ngIf="field != false" class="field">{{field.toUpperCase()}}</div>
+      </ng-template>
+    </div>
+
+  </div>
+
+</div>
