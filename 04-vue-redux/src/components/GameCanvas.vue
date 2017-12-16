@@ -5,10 +5,10 @@
     <div class="fieldContainer">
       <template v-for="(field, index) in this.$root.$data.fields">
         <template v-if="field === false">
-          <div v-on:click="handlePlay(index)" class="field empty">&nbsp;</div>
+          <div @click="handlePlay(index)" class="field empty">&nbsp;</div>
         </template>
         <template v-else>
-          <div class="field">{{field.toUpperCase()}}</div>
+          <div class="field">{{field | uppercase}}</div>
         </template>
       </template>
     </div>
@@ -28,6 +28,12 @@ export default {
     },
     handleRestart: function(event) {
       store.dispatch({type: 'RESET_FIELDS'});
+    }
+  },
+  filters: {
+    uppercase: function(value) {
+      if (!value) return '';
+      return value.toUpperCase();
     }
   }
 }
