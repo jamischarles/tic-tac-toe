@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="clearButton" v-on:click="handleRestart">Clear</button>
+    <button class="clearButton" @click="handleRestart">Clear</button>
 
     <div class="fieldContainer">
       <template v-for="(field, index) in fields">
